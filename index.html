@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fruitty</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/icons/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="style/style.css">
+	<script src="script/main.js" defer></script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__row df">
+				<div class="header__logo logo">fruitty</div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<div class="header__coins">
+					<div class="coins">0</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="panel">
+		<div class="panel__column df">
+			<div class="panel__inner df">
+				<div class="panel__arrow to-top df">
+					<img class="move" src="images/icons/up-arrow.svg" alt="arrow top">
+				</div>
+				<div class="panel__arrow to-down df">
+					<img class="move" src="images/icons/down-arrow.svg" alt="arrow down">
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="main">
+		<div class="main__row df">
+			<div class="main__column main__column_click-panel df" id="click">
+				<div class="main__image bgi" data-skinnum="skin1" id="skin"></div>
+			</div>
+			<div class="main__column main__column_total df">
+				<div class="total">
+					<div class="total__title">
+						<h1>Welcome to <span class="logo">Fruitty</span> World!</h1>
+					</div>
+					<div class="total__total-list df">
+						<div class="total__total df">
+							<div class="total__total-name">Coins: </div>
+							<div class="coins total__total_info">0</div>
+						</div>
+						<div class="total__total df">
+							<div class="total__total-name">Clicks: </div>
+							<div class="clicks total__total_info">0</div>
+						</div>
+						<div class="total__total df">
+							<div class="total__total-name">All Coins: </div>
+							<div class="total-coins total__total_info">0</div>
+						</div>
+						<div class="total__total df">
+							<div class="total__total-name">Coins for clicks: </div>
+							<div class="coins-from-clicks total__total_info">0</div>
+						</div>
+						<div class="total__total df">
+							<div class="total__total-name">Coins per clicks: </div>
+							<div class="coins-per-click total__total_info">1</div>
+						</div>
+						<div class="total__total df">
+							<div class="total__total-name">Play time: </div>
+							<div class="seconds total__total_info">0</div>
+						</div>
+					</div>
+					<div class="total__coins coins">0</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="skins-section store">
+		<div class="container df">
+			<div class="skins-section__content">
+				<div class="skins-section__title">
+					<h2 class="title">Take Your Skin</h2>
+				</div>
+				<div class="skins-section__skins skins df">
+					<div class="skins__column df">
+						<div class="skin" data-skin="1" data-coins="0" data-plus="0" data-bought="true">
+							<div class="skin__image">
+								<img src="images/fruits/01.png" alt="Apple">
+							</div>
+							<div class="skin__name">Apple</div>
+						</div>
+					</div>
+					<div class="skins__column df">
+						<div class="skin" data-skin="2" data-coins="100" data-plus="3" data-bought="false">
+							<div class="skin__image">
+								<img src="images/fruits/02.png" alt="Orange">
+							</div>
+							<div class="skin__name">Orange</div>
+							<div class="skin__performance">+<span class="performance">3</span> per click</div>
+							<div class="skin__coins">$ 100</div>
+						</div>
+					</div>
+					<div class="skins__column df">
+						<div class="skin" data-skin="3" data-coins="250" data-plus="5" data-bought="false">
+							<div class="skin__image">
+								<img src="images/fruits/03.png" alt="Plum">
+							</div>
+							<div class="skin__name">Plum</div>
+							<div class="skin__performance">+<span class="performance">5</span> per click</div>
+							<div class="skin__coins">$ 250</div>
+						</div>
+					</div>
+					<div class="skins__column df">
+						<div class="skin" data-skin="4" data-coins="750" data-plus="7" data-bought="false">
+							<div class="skin__image">
+								<img src="images/fruits/04.png" alt="Kiwi">
+							</div>
+							<div class="skin__name">Kiwi</div>
+							<div class="skin__performance">+<span class="performance">7</span> per click</div>
+							<div class="skin__coins">$ 750</div>
+						</div>
+					</div>
+					<div class="skins__column df">
+						<div class="skin" data-skin="5" data-coins="1250" data-plus="10" data-bought="false">
+							<div class="skin__image">
+								<img src="images/fruits/05.png" alt="Apple">
+							</div>
+							<div class="skin__name">Passion Fruit</div>
+							<div class="skin__performance">+<span class="performance">10</span> per click</div>
+							<div class="skin__coins">$ 1250</div>
+						</div>
+					</div>
+					<div class="skins__column df">
+						<div class="skin" data-skin="6" data-coins="6000" data-plus="15" data-bought="false">
+							<div class="skin__image">
+								<img src="images/fruits/06.png" alt="Orange">
+							</div>
+							<div class="skin__name">Pomegranate</div>
+							<div class="skin__performance">+<span class="performance">15</span> per click</div>
+							<div class="skin__coins">$ 6000</div>
+						</div>
+					</div>
+					<div class="skins__column df">
+						<div class="skin" data-skin="7" data-coins="10000" data-plus="20" data-bought="false">
+							<div class="skin__image">
+								<img src="images/fruits/07.png" alt="Plum">
+							</div>
+							<div class="skin__name">Coconut</div>
+							<div class="skin__performance">+<span class="performance">20</span> per click</div>
+							<div class="skin__coins">$ 10000</div>
+						</div>
+					</div>
+					<div class="skins__column df">
+						<div class="skin" data-skin="8" data-coins="50000" data-plus="50" data-bought="false">
+							<div class="skin__image">
+								<img src="images/fruits/08.png" alt="Pineapple">
+							</div>
+							<div class="skin__name">Pineapple</div>
+							<div class="skin__performance">+<span class="performance">50</span> per click</div>
+							<div class="skin__coins">$ 50000</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="double-skins-section store">
+		<div class="container">
+			<div class="double-skins-section__content">
+				<div class="double-skins-section__title">
+					<h2 class="title">Double skins</h2>
+				</div>
+				<div class="double-skins">
+					<div class="double-skins__row df">
+						<div class="double-skins__column df">
+							<div class="skin" data-skin="9" data-coins="150000" data-plus="200" data-bought="false">
+								<div class="skin__image">
+									<img src="images/fruits/09.png" alt="Avocado">
+								</div>
+								<div class="skin__name">Avocado</div>
+								<div class="skin__performance">+<span class="performance">200</span> per click</div>
+								<div class="skin__coins">$ 150000</div>
+							</div>
+						</div>
+						<div class="double-skins__column df">
+							<div class="skin" data-skin="10" data-coins="300000" data-plus="500" data-bought="false">
+								<div class="skin__image">
+									<img src="images/fruits/10.png" alt="Banana">
+								</div>
+								<div class="skin__name">Banana</div>
+								<div class="skin__performance">+<span class="performance">500</span> per click</div>
+								<div class="skin__coins">$ 300.000</div>
+							</div>
+						</div>
+						<div class="double-skins__column df">
+							<div class="skin" data-skin="11" data-coins="800000" data-plus="1500" data-bought="false">
+								<div class="skin__image">
+									<img src="images/fruits/11.png" alt="Lime">
+								</div>
+								<div class="skin__name">Lime</div>
+								<div class="skin__performance">+<span class="performance">1500</span> per click</div>
+								<div class="skin__coins">$ 800.000</div>
+							</div>
+						</div>
+						<div class="double-skins__column df">
+							<div class="skin" data-skin="12" data-coins="2000000" data-plus="4000" data-bought="false">
+								<div class="skin__image">
+									<img src="images/fruits/12.png" alt="Lemon">
+								</div>
+								<div class="skin__name">Lemon</div>
+								<div class="skin__performance">+<span class="performance">4000</span> per click</div>
+								<div class="skin__coins">$ 2.000.000</div>
+							</div>
+						</div>
+						<div class="double-skins__row double-skins__new df">
+							<div class="double-skins__lay"></div>
+							<div class="double-skins__column df">
+								<div class="skin" data-skin="13" data-coins="5000000" data-plus="12500" data-bought="false">
+									<div class="skin__image">
+										<img src="images/fruits/13.png" alt="Rambutan">
+									</div>
+									<div class="skin__name">Rambutan</div>
+									<div class="skin__performance">+<span class="performance">12500</span> per click</div>
+									<div class="skin__coins">$ 5.000.000</div>
+								</div>
+							</div>
+							<div class="double-skins__column df">
+								<div class="skin" data-skin="14" data-coins="12500000" data-plus="25000" data-bought="false">
+									<div class="skin__image">
+										<img src="images/fruits/14.png" alt="Pitaya">
+									</div>
+									<div class="skin__name">Pitaya</div>
+									<div class="skin__performance">+<span class="performance">25000</span> per click</div>
+									<div class="skin__coins">$ 12.500.000</div>
+								</div>
+							</div>
+							<div class="double-skins__column df">
+								<div class="skin" data-skin="15" data-coins="30000000" data-plus="60000" data-bought="false">
+									<div class="skin__image">
+										<img src="images/fruits/15.png" alt="Mangosteen">
+									</div>
+									<div class="skin__name">Mangosteen</div>
+									<div class="skin__performance">+<span class="performance">60000</span> per click</div>
+									<div class="skin__coins">$ 30.000.000</div>
+								</div>
+							</div>
+							<div class="double-skins__column df">
+								<div class="skin" data-skin="16" data-coins="100000000" data-plus="250000" data-bought="false">
+									<div class="skin__image">
+										<img src="images/fruits/16.png" alt="Durian">
+									</div>
+									<div class="skin__name">Durian</div>
+									<div class="skin__performance">+<span class="performance">250000</span> per click</div>
+									<div class="skin__coins">$ 100.000.000</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="level store">
+		<div class="container">
+			<div class="level__content">
+				<div class="level__title">
+					<h2 class="title">Your Level</h2>
+				</div>
+				<div class="level__level-row level-row">
+					<div class="level-row__level">
+						<div class="level-row__procent procent">0%</div>
+					</div>
+				</div>
+				<div class="level__total df">
+					<div class="df">
+						<div class="level__all level-clicks">0</div>
+						<span>out of</span>
+						<div class="level__need need">10</div>
+					</div>
+					<div class="df">
+						<span>prize: </span>
+						<div class="level__prize prize">25</div>
+					</div>
+				</div>
+				<div class="level__total level__next_total df">
+					<div class="df">
+						<span>Next clicks is</span>
+						<div class="level__next need-next-clicks">25</div>
+					</div>
+					<div class="df">
+						<span>prize: </span>
+						<div class="level__next next-prize">50</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="alert">
+		<div class="alert__title"><span class="logo">Fruitty</span></div>
+		<div class="alert__text">Here the text</div>
+	</div>
+	<div class="star bgi df">
+		<div class="star__title">Only 40 level+</div>
+		<div class="star__text">lets play continue!</div>
+	</div>
+	<div class="slides">
+		<div class="slides__row df">
+			<div class="slide df active"></div>
+			<div class="slide df"></div>
+			<div class="slide df"></div>
+			<div class="slide df"></div>
+		</div>
+	</div>
+	<div style="width: 1px;height: 1px;margin-top: 15vh;"></div>
+</body>
+</html>
